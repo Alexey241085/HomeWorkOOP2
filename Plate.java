@@ -34,6 +34,7 @@ public class Plate {
     public  int add() {
         if (food <= 5){
             food += 100;
+            System.out.println("В тарелку добавили 100 корма");
         }
         return food;
     }

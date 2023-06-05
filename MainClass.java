@@ -6,21 +6,24 @@ public class MainClass {
         Cat cat4 = new Cat("Pushok", 17);
         Plate plate = new Plate(40);
 
-        Object[] cats = new Cat[] { cat, cat2, cat3, cat4 };
+        Cat[] cats = new Cat[] { cat, cat2, cat3, cat4 };
 
-        for (Object i : cats) {
-
+        for (Cat i : cats) {
+            plate.info();
+            i.eat(i,plate);
+            System.out.println(i);
         }
 
-        plate.info();
-        cat.eat(cat, plate);
-        plate.info();
-        cat2.eat(cat2,plate);
-        plate.info();
-        cat3.eat(cat3,plate);
-        plate.info();
-        cat4.eat(cat4,plate);
-        plate.info();
+//        plate.info();
+//        cat.eat(cat, plate);
+//        plate.info();
+//        cat2.eat(cat2,plate);
+//        plate.info();
+//        cat3.eat(cat3,plate);
+//        plate.info();
+//        cat4.eat(cat4,plate);
+//        plate.info();
+
 
         plate.add();
         plate.info();

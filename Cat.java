@@ -50,4 +50,9 @@ public class Cat {
 
         }
     }
+
+    @Override
+    public String toString() {
+        return String.format("").toString();
+    }
 }
